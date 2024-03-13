@@ -28,6 +28,10 @@ app.use(morgan("dev"));
 
 app.use("/api/items", require('./routes/itemRoutes'))
 
+app.get('/', (req, res) => {
+    res.send('Hello, world!'); // Respond with a simple message
+});
+
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
 });
