@@ -24,6 +24,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 
+app.get('/favicon.ico', (req, res) => res.status(204));
+
 // routes
 
 app.use("/api/items", require('./routes/itemRoutes'))
@@ -32,7 +34,6 @@ app.get('/', (req, res) => {
     res.send('Hello, world!'); // Respond with a simple message
 });
 
-app.get('/favicon.ico', (req, res) => res.status(204));
 
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
