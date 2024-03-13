@@ -32,6 +32,8 @@ app.get('/', (req, res) => {
     res.send('Hello, world!'); // Respond with a simple message
 });
 
+app.get('/favicon.ico', (req, res) => res.status(204));
+
 app.listen(PORT, () => {
     console.log(`Example app listening on port ${PORT}`)
 });
