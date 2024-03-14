@@ -1,5 +1,5 @@
 const express = require('express');
-const { getItemController, addItemController, singleItemController } = require('../controllers/itemController');
+const { getItemController, addItemController, singleItemController } = require('../controllers/itemController.js');
 
 const router = express.Router();
 
