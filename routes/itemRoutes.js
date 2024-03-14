@@ -1,18 +1,18 @@
-const express = require('express');
-const { getItemController, addItemController, singleItemController } = require('../controllers/itemController.js');
+// const express = require('express');
+// const { getItemController, addItemController, singleItemController } = require('../controllers/itemController.js');
 
-const router = express.Router();
+// const router = express.Router();
 
-// Get method to find all the data
+// // Get method to find all the data
 
-router.get('/get-item', getItemController);
+// router.get('/get-item', getItemController);
 
-// Get a single Product
+// // Get a single Product
 
-router.get('/get-item/:id', singleItemController);
+// router.get('/get-item/:id', singleItemController);
 
-// Post the Product data here in this section
+// // Post the Product data here in this section
 
-router.post('/add-item', addItemController);
+// router.post('/add-item', addItemController);
 
-module.exports = router;
+// module.exports = router;
